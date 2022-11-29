@@ -14,7 +14,8 @@ public class TipoInstrumentoController {
     TipoInstrumentoService tipoInstrumentoService;
 
     @GetMapping("/all")
-    public Object getHoliday() {
+    public Object getTipoInstrumento() {
         return this.tipoInstrumentoService.getAllTipoInstrumento();
     }
+
 }

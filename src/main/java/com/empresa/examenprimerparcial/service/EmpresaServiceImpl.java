@@ -15,4 +15,9 @@ public class EmpresaServiceImpl implements EmpresaService {
     public List<Empresa> getAllEmpresas() {
         return empresaRepository.findAll();
     }
+
+    @Override
+    public Empresa readByName(String nombre) {
+        return this.empresaRepository.findByPkName(String nombre);
+    }
 }
